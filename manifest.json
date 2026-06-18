@@ -1,0 +1,407 @@
+{
+  "_comment": "NEXUS asset CDN — single base for all sprites, scenes, map and endings. Emotion-labeled sprites + day/location-labeled scenes, deduplicated. Serve statically on Vercel; reference by URL from Figma Make.",
+  "baseUrl": "https://nexus-assets.vercel.app",
+  "note": "baseUrl is the assumed Vercel domain. If you deploy this repo to a different project/domain, replace baseUrl with that domain — all paths below are relative to it.",
+  "characters": {
+    "santiago": {
+      "role": "Onboarding peer / buddy guide",
+      "color": "#0078FF",
+      "sprites": [
+        {
+          "name": "santiago_wave",
+          "emotion": "wave",
+          "use": "Entrance / greeting",
+          "file": "characters/santiago/santiago_wave.png",
+          "url": "https://nexus-assets.vercel.app/characters/santiago/santiago_wave.png"
+        },
+        {
+          "name": "santiago_greet",
+          "emotion": "greet",
+          "use": "Warm greeting (alt wave)",
+          "file": "characters/santiago/santiago_greet.png",
+          "url": "https://nexus-assets.vercel.app/characters/santiago/santiago_greet.png"
+        },
+        {
+          "name": "santiago_present",
+          "emotion": "present",
+          "use": "Introducing / presenting a point",
+          "file": "characters/santiago/santiago_present.png",
+          "url": "https://nexus-assets.vercel.app/characters/santiago/santiago_present.png"
+        },
+        {
+          "name": "santiago_explain",
+          "emotion": "explain",
+          "use": "Explaining / 'what I mean is…'",
+          "file": "characters/santiago/santiago_explain.png",
+          "url": "https://nexus-assets.vercel.app/characters/santiago/santiago_explain.png"
+        },
+        {
+          "name": "santiago_think",
+          "emotion": "think",
+          "use": "Thinking / considering",
+          "file": "characters/santiago/santiago_think.png",
+          "url": "https://nexus-assets.vercel.app/characters/santiago/santiago_think.png"
+        },
+        {
+          "name": "santiago_thumbsup",
+          "emotion": "thumbsup",
+          "use": "Approval / encouragement",
+          "file": "characters/santiago/santiago_thumbsup.png",
+          "url": "https://nexus-assets.vercel.app/characters/santiago/santiago_thumbsup.png"
+        },
+        {
+          "name": "santiago_facepalm",
+          "emotion": "facepalm",
+          "use": "Frustration / 'oof'",
+          "file": "characters/santiago/santiago_facepalm.png",
+          "url": "https://nexus-assets.vercel.app/characters/santiago/santiago_facepalm.png"
+        }
+      ]
+    },
+    "alejandra": {
+      "role": "Professor / lecturer",
+      "color": "#A78BFA",
+      "sprites": [
+        {
+          "name": "alejandra_neutral",
+          "emotion": "neutral",
+          "use": "Default / listening",
+          "file": "characters/alejandra/alejandra_neutral.png",
+          "url": "https://nexus-assets.vercel.app/characters/alejandra/alejandra_neutral.png"
+        },
+        {
+          "name": "alejandra_welcome",
+          "emotion": "welcome",
+          "use": "Welcoming",
+          "file": "characters/alejandra/alejandra_welcome.png",
+          "url": "https://nexus-assets.vercel.app/characters/alejandra/alejandra_welcome.png"
+        },
+        {
+          "name": "alejandra_excited",
+          "emotion": "excited",
+          "use": "Excited / 'exactly!'",
+          "file": "characters/alejandra/alejandra_excited.png",
+          "url": "https://nexus-assets.vercel.app/characters/alejandra/alejandra_excited.png"
+        },
+        {
+          "name": "alejandra_shrug",
+          "emotion": "shrug",
+          "use": "Shrug / open question",
+          "file": "characters/alejandra/alejandra_shrug.png",
+          "url": "https://nexus-assets.vercel.app/characters/alejandra/alejandra_shrug.png"
+        },
+        {
+          "name": "alejandra_think",
+          "emotion": "think",
+          "use": "Thinking / pondering",
+          "file": "characters/alejandra/alejandra_think.png",
+          "url": "https://nexus-assets.vercel.app/characters/alejandra/alejandra_think.png"
+        },
+        {
+          "name": "alejandra_point",
+          "emotion": "point",
+          "use": "Key point",
+          "file": "characters/alejandra/alejandra_point.png",
+          "url": "https://nexus-assets.vercel.app/characters/alejandra/alejandra_point.png"
+        },
+        {
+          "name": "alejandra_explain",
+          "emotion": "explain",
+          "use": "Explaining / steps",
+          "file": "characters/alejandra/alejandra_explain.png",
+          "url": "https://nexus-assets.vercel.app/characters/alejandra/alejandra_explain.png"
+        },
+        {
+          "name": "alejandra_count",
+          "emotion": "count",
+          "use": "Enumerating / counting",
+          "file": "characters/alejandra/alejandra_count.png",
+          "url": "https://nexus-assets.vercel.app/characters/alejandra/alejandra_count.png"
+        },
+        {
+          "name": "alejandra_curious",
+          "emotion": "curious",
+          "use": "Curious / intrigued",
+          "file": "characters/alejandra/alejandra_curious.png",
+          "url": "https://nexus-assets.vercel.app/characters/alejandra/alejandra_curious.png"
+        },
+        {
+          "name": "alejandra_calm",
+          "emotion": "calm",
+          "use": "Calm / reassuring",
+          "file": "characters/alejandra/alejandra_calm.png",
+          "url": "https://nexus-assets.vercel.app/characters/alejandra/alejandra_calm.png"
+        },
+        {
+          "name": "alejandra_confident",
+          "emotion": "confident",
+          "use": "Confident / assertive",
+          "file": "characters/alejandra/alejandra_confident.png",
+          "url": "https://nexus-assets.vercel.app/characters/alejandra/alejandra_confident.png"
+        }
+      ]
+    },
+    "aya": {
+      "role": "Creative / visual lab instructor",
+      "color": "#05B090",
+      "sprites": [
+        {
+          "name": "aya_review",
+          "emotion": "review",
+          "use": "Reviewing work / checking notes",
+          "file": "characters/aya/aya_review.png",
+          "url": "https://nexus-assets.vercel.app/characters/aya/aya_review.png"
+        },
+        {
+          "name": "aya_facepalm",
+          "emotion": "facepalm",
+          "use": "Sigh / unimpressed",
+          "file": "characters/aya/aya_facepalm.png",
+          "url": "https://nexus-assets.vercel.app/characters/aya/aya_facepalm.png"
+        },
+        {
+          "name": "aya_talk",
+          "emotion": "talk",
+          "use": "Talking / casual explaining",
+          "file": "characters/aya/aya_talk.png",
+          "url": "https://nexus-assets.vercel.app/characters/aya/aya_talk.png"
+        },
+        {
+          "name": "aya_idea",
+          "emotion": "idea",
+          "use": "Idea / eureka",
+          "file": "characters/aya/aya_idea.png",
+          "url": "https://nexus-assets.vercel.app/characters/aya/aya_idea.png"
+        },
+        {
+          "name": "aya_point",
+          "emotion": "point",
+          "use": "Calling on you / 'you!'",
+          "file": "characters/aya/aya_point.png",
+          "url": "https://nexus-assets.vercel.app/characters/aya/aya_point.png"
+        },
+        {
+          "name": "aya_wink",
+          "emotion": "wink",
+          "use": "Playful / cheeky",
+          "file": "characters/aya/aya_wink.png",
+          "url": "https://nexus-assets.vercel.app/characters/aya/aya_wink.png"
+        },
+        {
+          "name": "aya_explain",
+          "emotion": "explain",
+          "use": "Explaining a concept",
+          "file": "characters/aya/aya_explain.png",
+          "url": "https://nexus-assets.vercel.app/characters/aya/aya_explain.png"
+        },
+        {
+          "name": "aya_excited",
+          "emotion": "excited",
+          "use": "Excited / hype",
+          "file": "characters/aya/aya_excited.png",
+          "url": "https://nexus-assets.vercel.app/characters/aya/aya_excited.png"
+        }
+      ]
+    }
+  },
+  "scenes": {
+    "intro": [
+      {
+        "name": "intro_01",
+        "file": "scenes/intro/intro_01.png",
+        "url": "https://nexus-assets.vercel.app/scenes/intro/intro_01.png",
+        "desc": "Opening — office / meeting room establishing"
+      },
+      {
+        "name": "intro_02",
+        "file": "scenes/intro/intro_02.png",
+        "url": "https://nexus-assets.vercel.app/scenes/intro/intro_02.png",
+        "desc": "Opening — recruiter (Adam) close-up in office"
+      },
+      {
+        "name": "intro_03",
+        "file": "scenes/intro/intro_03.png",
+        "url": "https://nexus-assets.vercel.app/scenes/intro/intro_03.png",
+        "desc": "Opening — candidate at the table"
+      },
+      {
+        "name": "intro_04",
+        "file": "scenes/intro/intro_04.png",
+        "url": "https://nexus-assets.vercel.app/scenes/intro/intro_04.png",
+        "desc": "Opening — city skyline (wide establishing)"
+      },
+      {
+        "name": "intro_05",
+        "file": "scenes/intro/intro_05.png",
+        "url": "https://nexus-assets.vercel.app/scenes/intro/intro_05.png",
+        "desc": "Opening — interview / across-the-table"
+      },
+      {
+        "name": "intro_06",
+        "file": "scenes/intro/intro_06.png",
+        "url": "https://nexus-assets.vercel.app/scenes/intro/intro_06.png",
+        "desc": "Opening — city skyline at night"
+      },
+      {
+        "name": "intro_07",
+        "file": "scenes/intro/intro_07.png",
+        "url": "https://nexus-assets.vercel.app/scenes/intro/intro_07.png",
+        "desc": "Opening — city skyline (closing beat)"
+      }
+    ],
+    "tuesday": [
+      {
+        "name": "tuesday_01",
+        "file": "scenes/tuesday/tuesday_01.png",
+        "url": "https://nexus-assets.vercel.app/scenes/tuesday/tuesday_01.png",
+        "desc": "Tuesday — auditorium with A/B floor markers (drag challenge)"
+      },
+      {
+        "name": "tuesday_02",
+        "file": "scenes/tuesday/tuesday_02.png",
+        "url": "https://nexus-assets.vercel.app/scenes/tuesday/tuesday_02.png",
+        "desc": "Tuesday — warm library hall"
+      },
+      {
+        "name": "tuesday_03",
+        "file": "scenes/tuesday/tuesday_03.png",
+        "url": "https://nexus-assets.vercel.app/scenes/tuesday/tuesday_03.png",
+        "desc": "Tuesday — sunny library by the windows (reused for game frames 3-5)"
+      },
+      {
+        "name": "tuesday_04",
+        "file": "scenes/tuesday/tuesday_04.png",
+        "url": "https://nexus-assets.vercel.app/scenes/tuesday/tuesday_04.png",
+        "desc": "Tuesday — library bookshelf aisle"
+      }
+    ],
+    "wednesday": [
+      {
+        "name": "wednesday_01",
+        "file": "scenes/wednesday/wednesday_01.png",
+        "url": "https://nexus-assets.vercel.app/scenes/wednesday/wednesday_01.png",
+        "desc": "Wednesday — bright blue lecture hall"
+      },
+      {
+        "name": "wednesday_02",
+        "file": "scenes/wednesday/wednesday_02.png",
+        "url": "https://nexus-assets.vercel.app/scenes/wednesday/wednesday_02.png",
+        "desc": "Wednesday — lecture hall, alt angle"
+      },
+      {
+        "name": "wednesday_03",
+        "file": "scenes/wednesday/wednesday_03.png",
+        "url": "https://nexus-assets.vercel.app/scenes/wednesday/wednesday_03.png",
+        "desc": "Wednesday — dim empty hall (reused for game frames 3-5)"
+      },
+      {
+        "name": "wednesday_04",
+        "file": "scenes/wednesday/wednesday_04.png",
+        "url": "https://nexus-assets.vercel.app/scenes/wednesday/wednesday_04.png",
+        "desc": "Wednesday — warm wooden lecture hall"
+      }
+    ],
+    "thursday": [
+      {
+        "name": "thursday_01",
+        "file": "scenes/thursday/thursday_01.png",
+        "url": "https://nexus-assets.vercel.app/scenes/thursday/thursday_01.png",
+        "desc": "Thursday — visual lab interior (lit)"
+      },
+      {
+        "name": "thursday_02",
+        "file": "scenes/thursday/thursday_02.png",
+        "url": "https://nexus-assets.vercel.app/scenes/thursday/thursday_02.png",
+        "desc": "Thursday — lab interior, alt"
+      },
+      {
+        "name": "thursday_03",
+        "file": "scenes/thursday/thursday_03.png",
+        "url": "https://nexus-assets.vercel.app/scenes/thursday/thursday_03.png",
+        "desc": "Thursday — dark empty room (reused for game frames 3-5)"
+      },
+      {
+        "name": "thursday_04",
+        "file": "scenes/thursday/thursday_04.png",
+        "url": "https://nexus-assets.vercel.app/scenes/thursday/thursday_04.png",
+        "desc": "Thursday — lab interior, warm"
+      },
+      {
+        "name": "thursday_aya_01",
+        "file": "scenes/thursday/thursday_aya_01.png",
+        "url": "https://nexus-assets.vercel.app/scenes/thursday/thursday_aya_01.png",
+        "desc": "Aya cutscene — talking, blinds backdrop"
+      },
+      {
+        "name": "thursday_aya_02",
+        "file": "scenes/thursday/thursday_aya_02.png",
+        "url": "https://nexus-assets.vercel.app/scenes/thursday/thursday_aya_02.png",
+        "desc": "Aya cutscene — pointing at viewer"
+      },
+      {
+        "name": "thursday_aya_03",
+        "file": "scenes/thursday/thursday_aya_03.png",
+        "url": "https://nexus-assets.vercel.app/scenes/thursday/thursday_aya_03.png",
+        "desc": "Aya cutscene — excited, arm raised"
+      },
+      {
+        "name": "thursday_aya_04",
+        "file": "scenes/thursday/thursday_aya_04.png",
+        "url": "https://nexus-assets.vercel.app/scenes/thursday/thursday_aya_04.png",
+        "desc": "Aya cutscene — dark room beat"
+      },
+      {
+        "name": "thursday_aya_05",
+        "file": "scenes/thursday/thursday_aya_05.png",
+        "url": "https://nexus-assets.vercel.app/scenes/thursday/thursday_aya_05.png",
+        "desc": "Aya cutscene — celebratory party lights"
+      },
+      {
+        "name": "thursday_aya_06",
+        "file": "scenes/thursday/thursday_aya_06.png",
+        "url": "https://nexus-assets.vercel.app/scenes/thursday/thursday_aya_06.png",
+        "desc": "Aya cutscene — presenting tablets"
+      },
+      {
+        "name": "thursday_aya_07",
+        "file": "scenes/thursday/thursday_aya_07.png",
+        "url": "https://nexus-assets.vercel.app/scenes/thursday/thursday_aya_07.png",
+        "desc": "Aya cutscene — waving in the lounge"
+      }
+    ],
+    "rooms": [
+      {
+        "name": "classroom",
+        "file": "scenes/rooms/classroom.png",
+        "url": "https://nexus-assets.vercel.app/scenes/rooms/classroom.png",
+        "desc": "Standalone — bright classroom (blue desks)"
+      },
+      {
+        "name": "library",
+        "file": "scenes/rooms/library.png",
+        "url": "https://nexus-assets.vercel.app/scenes/rooms/library.png",
+        "desc": "Standalone — library lounge interior"
+      },
+      {
+        "name": "lab",
+        "file": "scenes/rooms/lab.png",
+        "url": "https://nexus-assets.vercel.app/scenes/rooms/lab.png",
+        "desc": "Standalone — dark lab interior"
+      }
+    ]
+  },
+  "map": {
+    "name": "campus_map",
+    "file": "map/campus_map.png",
+    "url": "https://nexus-assets.vercel.app/map/campus_map.png",
+    "desc": "Isometric campus map (canonical; was MapCanvas 1749x952)"
+  },
+  "endings": [
+    {
+      "name": "bad_ending",
+      "file": "endings/bad_ending.png",
+      "url": "https://nexus-assets.vercel.app/endings/bad_ending.png",
+      "desc": "Dramatic 'bad ending' — monster over a burning city (was escena_fin_malo)"
+    }
+  ]
+}
