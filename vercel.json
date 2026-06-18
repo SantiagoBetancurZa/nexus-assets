@@ -1,5 +1,9 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "framework": null,
+  "buildCommand": "echo 'static asset repo — no build'",
+  "outputDirectory": ".",
+  "installCommand": "echo 'no deps'",
   "headers": [
     {
       "source": "/(.*)\\.(png|jpg|jpeg|webp|svg|gif)",
