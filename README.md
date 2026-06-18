@@ -5,7 +5,7 @@ backgrounds, the campus map and endings — organized and labeled so they can be
 **by URL from Figma Make** (URL images don't count toward Make's 30-media cap).
 
 - **Machine-readable index:** [`manifest.json`](./manifest.json) (every asset → relative path + full URL + tags).
-- **Assumed base URL:** `https://nexus-assets.vercel.app` — if you deploy this repo to a
+- **Assumed base URL:** `https://nexus-cdn.vercel.app` — if you deploy this repo to a
   different Vercel project/domain, swap the base; all paths below are relative to it.
 - **Serving:** pure static. Vercel serves every file as-is from the repo root (no build).
 
@@ -25,10 +25,10 @@ endings/bad_ending.png                   # dramatic bad ending
 Reference any asset by `BASE + relative path`, e.g.:
 
 ```
-https://nexus-assets.vercel.app/characters/aya/aya_idea.png
-https://nexus-assets.vercel.app/scenes/wednesday/wednesday_01.png
-https://nexus-assets.vercel.app/scenes/thursday/thursday_aya_03.png
-https://nexus-assets.vercel.app/map/campus_map.png
+https://nexus-cdn.vercel.app/characters/aya/aya_idea.png
+https://nexus-cdn.vercel.app/scenes/wednesday/wednesday_01.png
+https://nexus-cdn.vercel.app/scenes/thursday/thursday_aya_03.png
+https://nexus-cdn.vercel.app/map/campus_map.png
 ```
 
 Sprite emotion labels and per-scene descriptions live in `manifest.json`.
